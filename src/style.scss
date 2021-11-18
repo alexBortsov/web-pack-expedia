@@ -650,7 +650,7 @@ header::before{
       font-size: 25px;
    }
    .hotel__button_link{
-      padding: 2px 23px;
+      padding: 2px 16px;
       max-width: 98px;
       min-height: 43px;
    }
@@ -763,9 +763,10 @@ header::before{
    background-color: transparent;
    outline: 0;
    font-size: 50px;
-   top: 95px;
+   top: 36%;
    color: rgba(0, 0, 0, 0.4);
    transition: 0.15s linear;
+   width: 30px;
  }
  #expedia__slider .slider__controls button:hover {
    color: rgba(0, 0, 0, 0.8);
@@ -773,6 +774,7 @@ header::before{
  @media (max-width: 992px) {
    #expedia__slider .slider__controls button {
      font-size: 30px;
+     visibility: hidden;
    }
  }
  @media (max-width: 767px) {

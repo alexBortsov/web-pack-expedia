@@ -1,6 +1,18 @@
 /*!*********************************************************************************************************!*\
   !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/style.scss ***!
   \*********************************************************************************************************/
+@font-face {
+  font-family: openSansCondensed;
+  src: url(4c789041ac99d2061ce6.ttf) format("truetype");
+}
+@font-face {
+  font-family: openSans;
+  src: url(f0cdede053a22b990af8.ttf) format("truetype");
+}
+@font-face {
+  font-family: openSansHebrewCondensed;
+  src: url(5057cd006626903246d3.ttf) format("truetype");
+}
 *,
 *::before,
 *::after {
@@ -38,7 +50,7 @@ body {
   color: #252B42;
   font-weight: 500;
   background: #fafafa;
-  font-family: "Open Sans Condensed";
+  font-family: openSansCondensed;
 }
 
 .wrapper {
@@ -128,6 +140,7 @@ header::before {
 
 .menu__link {
   color: #fff;
+  font-family: openSansHebrewCondensed;
   font-size: 16px;
   font-weight: 700;
   padding-bottom: 5px;
@@ -366,7 +379,7 @@ header::before {
   font-weight: 700;
   font-size: 165px;
   line-height: 136.1818181818%;
-  font-family: "Open Sans Condensed";
+  font-family: inherit;
 }
 
 .main-block__subtitle {
@@ -374,7 +387,7 @@ header::before {
   font-weight: 700;
   font-size: 24px;
   line-height: 136.1666666667%;
-  font-family: "Open Sans Condensed";
+  font-family: inherit;
 }
 
 .main-block__button {
@@ -401,7 +414,7 @@ header::before {
   font-weight: 700;
   line-height: 200%;
   background: #16DCF0;
-  font-family: "Open Sans";
+  font-family: openSans;
   color: #fff;
 }
 
@@ -460,7 +473,7 @@ header::before {
 }
 
 .header-block_title {
-  font-family: "Open Sans Condensed";
+  font-family: inherit;
   font-weight: 700;
   font-size: 48px;
   line-height: 136.1875%;
@@ -471,6 +484,7 @@ header::before {
 }
 
 .header-block__text {
+  font-family: openSansHebrewCondensed;
   font-weight: 400;
   font-size: 16px;
   line-height: 120%;
@@ -493,6 +507,7 @@ header::before {
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
+  font-family: inherit;
 }
 
 .newlife__item {
@@ -544,6 +559,7 @@ header::before {
 }
 
 .newlife__title {
+  font-family: inherit;
   font-weight: 700;
   font-size: 24px;
   line-height: 136%;
@@ -551,6 +567,7 @@ header::before {
 }
 
 .newlife__text {
+  font-family: inherit;
   font-size: 16px;
   line-height: 120%;
   color: #fff;
@@ -563,6 +580,7 @@ header::before {
 
 .newlife__button_link {
   color: #fff;
+  font-family: openSansHebrewCondensed;
   font-weight: 700;
   line-height: 136%;
 }
@@ -602,6 +620,7 @@ header::before {
   top: 0;
   left: 0;
   z-index: 5;
+  font-family: inherit;
 }
 
 .hotel__title {
@@ -642,7 +661,7 @@ header::before {
   background: #16DCF0;
   max-width: 150px;
   color: #fff;
-  font-family: "Open Sans";
+  font-family: openSans;
 }
 
 .hotel__button_link:hover {
@@ -715,7 +734,7 @@ header::before {
   }
 
   .hotel__button_link {
-    padding: 2px 23px;
+    padding: 2px 16px;
     max-width: 98px;
     min-height: 43px;
   }
@@ -843,9 +862,10 @@ header::before {
   background-color: transparent;
   outline: 0;
   font-size: 50px;
-  top: 95px;
+  top: 36%;
   color: rgba(0, 0, 0, 0.4);
   transition: 0.15s linear;
+  width: 30px;
 }
 
 #expedia__slider .slider__controls button:hover {
@@ -855,6 +875,7 @@ header::before {
 @media (max-width: 992px) {
   #expedia__slider .slider__controls button {
     font-size: 30px;
+    visibility: hidden;
   }
 }
 @media (max-width: 767px) {
@@ -897,6 +918,7 @@ header::before {
 }
 
 .booktickets__title {
+  font-family: inherit;
   font-size: 48px;
   font-weight: 700;
   line-height: 136%;
@@ -1019,16 +1041,19 @@ header::before {
 .location__hotel_label,
 .personal-data__label {
   padding: 25px 0px 5px 0px;
+  font-family: openSans;
 }
 
 .booktickets__guests {
   display: grid;
   align-items: center;
   grid-template-columns: repeat(4, 1fr);
+  font-family: openSans;
 }
 
 .booktickets__guests_title {
   padding: 0px 0px 19px 0px;
+  font-family: openSans;
 }
 
 .booktickets__guests_row {
@@ -1115,7 +1140,7 @@ input[type=radio]:focus + .guests__label:before {
   line-height: 200%;
   background: #16DCF0;
   color: #fff;
-  font-family: "Open Sans";
+  font-family: openSans;
 }
 
 .booktickets__submit:hover {
@@ -1292,7 +1317,7 @@ input[type=radio]:focus + .guests__label:before {
 }
 
 .footer__container {
-  padding: 100px 0px 60px 0px;
+  padding: 10px 0px 10px 0px;
 }
 
 .footer__body {
@@ -1308,6 +1333,7 @@ input[type=radio]:focus + .guests__label:before {
 }
 
 .menu__link_footer {
+  font-family: openSans;
   color: inherit;
   font-size: inherit;
   font-weight: inherit;
