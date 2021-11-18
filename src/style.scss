@@ -1,3 +1,5 @@
+@use './fonts.scss';
+
 *,
 *::before,
 *::after{
@@ -32,7 +34,7 @@ body{
    color: #252B42;
    font-weight: 500;
    background: #fafafa;
-   font-family: 'Open Sans Condensed';
+   font-family: openSansCondensed;
 }
 .wrapper{
    min-height: 100%;
@@ -113,6 +115,7 @@ header::before{
 }
 .menu__link {
    color: #fff;
+   font-family: openSansHebrewCondensed;
    font-size: 16px;
    font-weight: 700;
    padding-bottom: 5px;
@@ -324,14 +327,14 @@ header::before{
   font-weight: 700;
   font-size: 165px;
   line-height: calc(224.7 / 165 * 100%);
-  font-family: 'Open Sans Condensed';
+  font-family:inherit;
 }
 .main-block__subtitle {
   color: #fff;
   font-weight: 700;
   font-size: 24px;
   line-height: calc(32.68 / 24 * 100%);
-  font-family: 'Open Sans Condensed';
+  font-family: inherit;
 }
 .main-block__button {
   border-radius: 37px;
@@ -356,7 +359,7 @@ header::before{
   font-weight: 700;
   line-height: 200%; 
   background: #16DCF0;
-  font-family: 'Open Sans';
+  font-family: openSans;
   color: #fff;
 }
 .main-block__button_link:hover{
@@ -410,7 +413,7 @@ header::before{
     margin: 0px 0px 30px 0px;
  }
  .header-block_title {
-    font-family: 'Open Sans Condensed';
+    font-family: inherit;
     font-weight: 700;
     font-size: 48px;
     line-height: calc(65.37 / 48 * 100%);
@@ -419,7 +422,8 @@ header::before{
     margin: 0px 0px 10px 0px;
  }
  .header-block__text {
-    font-weight: 400;
+   font-family: openSansHebrewCondensed;
+   font-weight: 400;
     font-size: 16px;
     line-height: calc(19.2 / 16 * 100%);
  }
@@ -442,6 +446,7 @@ header::before{
    justify-content: space-evenly;
    align-items: center;
    flex-wrap: wrap;
+   font-family: inherit;
 }
 
 .newlife__item {
@@ -488,12 +493,14 @@ header::before{
    transition: all 3s ease 0s;  
 }
 .newlife__title {
+   font-family: inherit;
    font-weight: 700;
    font-size: 24px;
    line-height: 136%;
    color: #fff;
 }
 .newlife__text {
+   font-family: inherit;
    font-size: 16px;
    line-height: 120%;
    color: #fff;
@@ -504,6 +511,7 @@ header::before{
 }
 .newlife__button_link{
  color: #fff;
+ font-family: openSansHebrewCondensed;
  font-weight: 700;
  line-height: 136%;
 }
@@ -541,6 +549,8 @@ header::before{
    top: 0;
    left: 0;
    z-index: 5;
+   font-family: inherit;
+
 }
 
 
@@ -579,7 +589,7 @@ header::before{
    background: #16DCF0;
    max-width: 150px;
    color: #fff;
-   font-family: 'Open Sans';
+   font-family: openSans;
 }
 .hotel__button_link:hover{
    background: -webkit-linear-gradient(45deg, rgb(22, 220, 240), rgb(28, 201, 56));
@@ -804,6 +814,7 @@ header::before{
   
 }
 .booktickets__title {
+   font-family: inherit;
    font-size: 48px;
    font-weight: 700;
    line-height: 136%;
@@ -919,15 +930,18 @@ header::before{
 .location__hotel_label,
 .personal-data__label{
    padding: 25px 0px 5px 0px;
+   font-family: openSans;
 }
 .booktickets__guests{
   display: grid;
    align-items: center;
    grid-template-columns: repeat(4, 1fr);
+   font-family: openSans;
    
 }
 .booktickets__guests_title{
    padding: 0px 0px 19px 0px;
+   font-family: openSans;
 }
 .booktickets__guests_row{
    margin: 0px 5% 0px 0px;
@@ -1026,7 +1040,7 @@ input[type="radio"]{
    line-height: 200%; 
    background: #16DCF0;
    color: #fff;
-   font-family: 'Open Sans';
+   font-family: openSans;
 }
 .booktickets__submit:hover {
   background: -webkit-linear-gradient(45deg, rgb(22, 220, 240), rgb(28, 201, 56));
@@ -1177,7 +1191,7 @@ input[type="radio"]{
    padding: 50px 0px;
 }
 .footer__container{
-   padding: 100px 0px 60px 0px;
+   padding: 10px 0px 10px 0px;
 }
 .footer__body {
    display: flex;
@@ -1191,6 +1205,7 @@ input[type="radio"]{
 }
 
 .menu__link_footer {
+   font-family: openSans;
    color: inherit;
    font-size: inherit;
    font-weight: inherit;
